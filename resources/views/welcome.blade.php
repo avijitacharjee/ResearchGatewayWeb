@@ -143,15 +143,15 @@
     }
     /* End Royal Side Button Styles*/
 </style>
-<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="css/animate.min.css" rel="stylesheet" type="text/css" />
-<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
 <div class="top-bar">
     <div class="container">
@@ -162,9 +162,7 @@
                         <IMG alt="Isara Solutions" class="img-rounded"  src="images/small_logo.jpg">
         </a>-->
                     Research Gateway
-
                 </div>
-
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="social">
@@ -392,7 +390,7 @@
             <a href="career.html"  style="color: #FFFFFF">Join Us</a>
           </li>
           <li>
-            <a href="login.html"  style="color: #FFFFFF">Login</a>
+            <a href="login"  style="color: #FFFFFF">Login</a>
           </li>
 		 </ul>
     </nav>
@@ -905,13 +903,13 @@
      <link rel="stylesheet" href="../www.jacklmoore.com/colorbox/example1/colorbox.css" />
 		  <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
-    <script>
+    <!-- <script>
         function openColorBox() {
             $.colorbox({ iframe: true, width: "80%", height: "80%", href: "http://www.sphert.org/moving.htm" });
         }
 
         setTimeout(openColorBox, 1000);
-    </script>
+    </script> -->
      <script rel="nofollow"  src="js/bottom.js"></script>
     </form>
 </body>

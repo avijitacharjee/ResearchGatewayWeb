@@ -23,64 +23,524 @@
 
 
 <body class="logged-out">
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm A">
-            <div class="container A">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <div>
-                        Research Gateway
-                    </div>
-                </a>
-            </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<form method="post" action="http://researchgateway.in/" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEzOTE2NDY1NmRkZs/1GC+/0Fwou0fTeLqN/ggHqXftVdS9OV9UyHbeJeo=" />
+</div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+<div class="aspNetHidden">
 
-                    </ul>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+    <header id="header">
+      <style>
+    @import url(http://fonts.googleapis.com/css?family=Autour+One|Meie+Script|Armata|Rum+Raisin|Sonsie+One|Kavoon|Denk+One|Gravitas+One|Racing+Sans+One|Nosifer|Ropa+Sans|Offside|Titan+One|Paytone+One|Audiowide|Righteous|Faster+One|Russo+One|Germania+One|Krona+One|Emblema+One|Creepster|Delius+Unicase|Wallpoet|Sansita+One|Monoton|Kenia|Monofett);
+    /* Begin Royal Side Button Styles*/
+    #royal_sidebutton_tab {
+    font-family:"Righteous", cursive;
+    top:400px;
+    background-color:#d25a19;
+    color:#FFFFFF;
+    border-style:solid;
+    border-width:0px;
+    }
+    #royal_sidebutton_tab:hover {
+    background-color: #3EA2C7;
+    }
+    .royal_sidebutton_contents {
+    position:fixed;
+    margin:0;
+    padding:6px 13px 8px 13px;
+    text-decoration:none;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    border-style:solid;
+    display:block;
+    z-index:100000;
+    }
+    .royal_sidebutton_left {
+    cursor: pointer;
+    -webkit-transform-origin:0 0;
+    -moz-transform-origin:0 0;
+    -o-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -ms-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    transform:rotate(270deg);
+    right:-84px;
+    -moz-border-radius:10px 10px 0px 0px;
+    border-radius:10px 10px 0px 0px;
+    <!--[if lte IE 8]>
+/* Internet Explorer 8 and below */
+-ms-transform:rotate(270deg) / !important;
+*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+<![endif]-->
+    }
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+    .top-bar {
+       
+        z-index:1000;
+    }
+    nav {
+        position:fixed;
+        z-index:100;
+    }
+</style>
+<link href="assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="top-number" style="font-size: xx-large; font-family: Calibri; font-weight: bold;">
+                    <!--<a  href="Default">
+                        <IMG alt="Isara Solutions" class="img-rounded"  src="images/small_logo.jpg">
+        </a>-->
+                    Research Gateway
                 </div>
             </div>
-        </nav>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="social">
+                    <ul class="social-share">
+                        <li><a href="https://www.facebook.com/researchg.gateway.1"  target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+</div>
+
+<nav class="navbar navbar-inverse" role="banner">
+
+    <nav>
+        <a id="resp-menu" class="responsive-menu" href="#">
+            <i class="fa fa-reorder"></i> Menu
+        </a>
+        <ul class="menu">
+            <li>
+                <a  href="/">
+                    <i class="fa fa-user"></i> Home
+                </a>
+            </li>
+            <li>
+           <A       href="aboutus.html" style="color: #FFFFFF;">About Us</A>
+          </li>
+          <li>
+            <a href="know-writers.html"  style="color: #FFFFFF; font-size: 12px">Our Team</a>
+          </li>
+          <li>
+            <a href="plagiarism-removal-service.html"  style="color: #FFFFFF">Plagiarism</a>
+          </li>
+            <li>
+                <a  href="index.html#"> CrossRef Doi-Srevices</a>
+                <ul class="sub-menu">
+                    <li>
+                        <A       href="What-Is-Doi.html" style="color: #FFFFFF; font-size: 14px">What-Is-Doi</A>
+                    </li>
+                    <li>
+                        <A      href="Benefits-of-Doi.html" style="color: #FFFFFF; font-size: 14px">Benefits Of-Doi</A>
+                    </li>
+                    <li>
+                        <A      href="How-to-get-Doi.html" style="color: #FFFFFF; font-size: 14px">How-to-get-Doi</A>
+                    </li>
+                    <li>
+                        <a href="Crossref-Approved.html"  style="color: #FFFFFF ; font-size: 14px">CrossRef-Approved</a>
+                        
+                    </li>
+                    
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a  href="thesis.html"> Thesis</a>
+                <ul class="sub-menu">
+
+                    <li>
+                        <A       href="thesis-topics.html" style="color: #FFFFFF; font-size: 14px">Thesis Topics</A>
+                    </li>
+                    <li>
+                        <A      href="thesis-synopsis-writing.html" style="color: #FFFFFF; font-size: 14px">Thesis Synopsis Writing</A>
+                    </li>
+                    <li>
+                        <A        href="thesis.html" style="color: #FFFFFF; font-size: 14px">Thesis Writing</A>
+                    </li>
+                    <li>
+                        <A        href="thesis-editing.html" style="color: #FFFFFF; font-size: 14px">Thesis Editing</A>
+                    </li>
+
+                    <li>
+                        <A        href="thesis-statistics-help.html" style="color: #FFFFFF; font-size: 14px">Thesis Statistics Help</A>
+                    </li>
+                    <li>
+                        <A        href="journal-paper-writing-services.html" style="color: #FFFFFF; font-size: 14px">Journal Paper writing service</A>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a  href="research.html"> Research</a>
+                <ul class="sub-menu">
+                    
+                    
+                    <li>
+                        <a href="qualitative-research.html" style="color: #FFFFFF; font-size: 14px">Qualitative Research</a>
+    <ul class="sub-menu">
+
+                                <li>
+                                    <a href="the-focus-group.html"  style="color: #FFFFFF; font-size: 14px">The Focus Group</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="validity.html"  style="color: #FFFFFF; font-size: 14px">Validity</a>
+                                  </li>
+                                <li>
+                                    <a href="ethnography.html"  style="color: #FFFFFF; font-size: 14px">Ethnography</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="content-analysis.html"  style="color: #FFFFFF; font-size: 14px">Content Analysis</a>
+
+                                </li>
+
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="quantitative-research.html"  style="color: #FFFFFF; font-size: 14px">Quantitative Research</a>
+
+
+                        <ul class="sub-menu">
+
+                          
+                                <li>
+                                    <a href="determining-sample-size.html"  style="color: #FFFFFF; font-size: 14px">Determining Sample Size</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="data-entry-and-management.html"  style="color: #FFFFFF; font-size: 14px">Data Entry &amp; Management</a>
+                                    
+
+                                </li>
+                                <li>
+                                    <a href="survey-research-administration.html"  style="color: #FFFFFF; font-size: 14px">Survey Research &amp; Administration</a>
+                                </li>
+                                <li>
+                                    <a href="descriptive-statistics.html"  style="color: #FFFFFF; font-size: 14px">Descriptive Statistics</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="inferential-statistics.html"  style="color: #FFFFFF; font-size: 14px">Interpretive Statistics</a>
+
+                                </li>
+
+                            </ul>
+                    </li>
+    </ul>
+            </li>
+
+            <li>
+                <a  href="project-report.html"> Project Report</a>
+                <ul class="sub-menu">
+         <li>
+                        <A       href="MBA-Projects.html" style="color: #FFFFFF; font-size: 14px">MBA Projects</A>
+                    </li>
+                    <li>
+                        <A      href="MTech-Projects.html" style="color: #FFFFFF; font-size: 14px">M.Tech Projects</A>
+                    </li>
+                    <li>
+                        <A        href="ngo-project.html" style="color: #FFFFFF; font-size: 14px">NGO Project</A>
+                    </li>
+                    <li>
+                        <A        href="Corporate-Project.html" style="color: #FFFFFF; font-size: 14px">Corporate Project</A>
+                    </li>
+                    <li>
+                        <A        href="syndicated-Project.html" style="color: #FFFFFF; font-size: 14px">Syndicated Project</A>
+                    </li>
+                   </ul>
+            </li>
+            <li>
+                <A href="faq.html" >FAQS</A>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="faq.html"  style="color: #FFFFFF; font-size: 14px">FAQ</a>
+
+                        </li>
+                      <li>
+                        <A      href="academic-integrity-policy.html" style="color: #FFFFFF; font-size: 14px ">Academic Integrity Policy</A>
+                      </li>
+                      
+                      
+                        <li>
+                          <a  href="why-dissertation-india.html" style="color: #FFFFFF; font-size: 14px "> Why Us</a>
+                        </li>
+
+                    
+                        <li>
+                            <a href="set-onlinemeeting.html"  style="color: #FFFFFF; font-size: 14px">Set up an online meeting</a>
+
+
+                        </li>
+                        <!--<li>
+                            <a href="/testimonial.aspx"  style="color: #FFFFFF; font-size: 14px">Testimonials</a>
+                        </li>-->
+                       
+
+                    </ul>
+                </li>
+          <LI class="has-child">
+            <A href="#" >LIBRARY</A>
+            <UL class="submenu">
+              <LI class="submenu-item">
+                <a href="search.html" style="color: #FFFFFF; font-size: 14px">Article/Research paper</a>
+              </LI>
+              <LI class="submenu-item">
+                <a href="GenericErrorPage9e08.html" style="color: #FFFFFF; font-size: 14px">Thesis/Desertation</a>
+              </LI>
+            </UL>
+          </LI>
+          <li>
+            <A href="ContactUs.html" >Contact</a>
+              
+            </li>
+          <li>
+            <a href="career.html"  style="color: #FFFFFF">Join Us</a>
+          </li>
+          <li>
+            <a href="login"  style="color: #FFFFFF">Login</a>
+          </li>
+		 </ul>
+    </nav>
+</nav>
+    @yield('content')
+
+
+
+<section id="bottom">
+  <div class="container" data-wow-duration="1000ms" data-wow-delay="600ms">
+      
+    <div class="row">
+    <div class="col-md-3 col-sm-3">
+          
+                <h3 style="font-size: 16px">
+                    <b> Main Link</b>
+                </h3>
+          <ul>
+            <li><a href=".html" style="font-size: 14px">Home</a></li>
+            <li><A href="Online_Payment.html" style="font-size: 14px">Make an Online Payment</A></li>
+            <li><A href="terms-conditions.html" style="font-size: 14px">Terms and Conditions</A></li>
+            <li><A href="privacy-policy.html" style="font-size: 14px">Privacy Policy</A></li>
+            <li><A href="blog.html" style="font-size: 14px">Blog</A></li>
+          </ul>
+          </div>
+      <!--/.col-md-3-->
+
+      <!--<div class="col-md-3 col-sm-3">
+        <div class="widget">
+          <h3 style="font-size: 16px">
+              <b> Dissertation Services</b>
+          </h3>
+          <ul>
+          <li><a href="/dissertation.aspx" style="font-size: 14px">Dissertation Writing</a></li>
+          <li><A href="/dissertation-topics.aspx" style="font-size: 14px">Dissertation Topics</A></li>
+          <li><A href="/dissertation-editing.aspx" style="font-size: 14px">Dissertation Editing</A></li>
+          <li><A href="/dissertation-help-india.aspx" style="font-size: 14px">Dissertation Help</A></li>
+          <li><A href="/phd-dissertation-consulting.aspx" style="font-size: 14px">Phd Dissertation Consulting</A></li>
+          </ul>
+      </div>
+      </div>-->
+      <div class="col-md-3 col-sm-3">
+        <div class="widget">
+          <h3 style="font-size: 16px">
+            <b> CrossRef Dio- Services</b>
+          </h3>
+          <ul>
+            <li>
+              <a href="What-Is-Doi.html" style="font-size: 14px">What-Is-Doi</a>
+            </li>
+            <li>
+              <A href="Benefits-of-Doi.html" style="font-size: 14px">Benefits-of-Doi</A>
+            </li>
+            <li>
+              <A href="How-to-get-Doi.html" style="font-size: 14px">How-to-get-Doi</A>
+            </li>
+            <li>
+              <A href="Crossref-Approved.html" style="font-size: 14px">Crossref-Approved</A>
+            </li>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--/.col-md-3-->
+
+      <div class="col-md-3 col-sm-3">
+        <div class="widget">
+          <h3 style="font-size: 16px">
+              <b>Thesis Services</b>
+          </h3>
+          <ul>
+            <li><a href="thesis.html" style="font-size: 14px">Thesis Writing</a></li>
+            <li><a href="thesis-topics.html" style="font-size: 14px">Thesis Topics</a></li>
+            <li><a href="thesis-editing.html" style="font-size: 14px">Thesis Editing</a></li>
+            <li><a href="research-assistance-2.html" style="font-size: 14px">Research Assistance.</a></li>
+            <li><a href="thesis-synopsis-writing.html" style="font-size: 14px">Thesis Synopsis Writing</a></li>
+           </ul>
+        </div>
+      </div>
+      <!--/.col-md-3-->
+
+      <div class="col-md-3 col-sm-3">
+        <div class="widget">
+          <h3 style="font-size: 16px">
+              <b>More Offerings</b>
+          </h3>
+   <ul>
+      <li><A href="research.html"  style="font-size: 14px">Research</A></li>
+      <li><A href="MBA-Projects.html"  style="font-size: 14px">MBA Projects</A></li>
+      <li><A href="MTech-Projects.html"  style="font-size: 14px">M.Tech Projects</A></li>
+      <li><A href="Corporate-Project.html" style="font-size: 14px">Corporate/NGO Project</A></li>
+      <li><A href="syndicated-Project.html" style="font-size: 14px">Syndicated Project</A></li>
+      <li><A href="assignment-writing-2.html"  style="font-size: 14px">Assignment Writing</A></li>
+    </ul>
+        </div>
+      </div>
+      <!--/.col-md-3-->
+    </div>
+  </div>
+</section>
+
+
+ <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    &copy; 2008  Copyright © <a target="_blank" href="index.html" title="ResearchGateway">
+                       Researchgateway.in
+                    </a>All Rights Reserved. Develop By <a target="_blank" href="http://isarasolutions.com/default.aspx" title="IsaraSolutions">IsaraSolutions.com</a>
+</p>
+                </div>
+                <div class="col-sm-8">
+                    <ul class="pull-right">
+                      <li><a href="default-2.html">Home</a></li>
+                        <li>|&nbsp;&nbsp;<a href="career.html">Carrer</a></li>
+                        <li>|&nbsp;&nbsp;<a href="GenericErrorPage211d.html">Conducting Research</a></li>
+                        <li>|&nbsp;&nbsp;<a href="dissertation-2.html">Dissertation Writing</a></li>
+                        <li>|&nbsp;&nbsp;<a href="assignment-writing-2.html">Assignment Writing</a></li>
+                        <li>|&nbsp;&nbsp;<a href="phd-dissertation-consulting-2.html"> Dissertation consulting</a></li>
+                        <li>|&nbsp;&nbsp;<a href="Contactus-3.html">Support&amp; Contact</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top"><i class="fa fa-2x fa-angle-up"></i></a>
+    </footer>
+
+ 
+
+     <script type="text/javascript">
+         jQuery(document).ready(function () {
+             var offset = 300;
+             var duration = 500;
+             jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > offset) {
+                     jQuery('.back-to-top').fadeIn(duration);
+                 } else {
+                     jQuery('.back-to-top').fadeOut(duration);
+                 }
+             });
+
+             jQuery('.back-to-top').click(function (event) {
+                 event.preventDefault();
+                 jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                 return false;
+             })
+         });
+    </script>
+    <!-- /top-link-block -->
+    <!-- Jscript -->
+    <script rel="nofollow"  src='assets/js/jquery-2.1.3.min.js'></script>
+    <script rel="nofollow"  src='assets/js/jquery.js' type="text/javascript"></script>
+    <script rel="nofollow"  src='assets/js/bootstrap.min.js' type="text/javascript"></script>
+    <script rel="nofollow"  src='assets/js/jquery.prettyPhoto.js' type="text/javascript"></script>
+    <script rel="nofollow"  src='assets/js/jquery.isotope.min.js' type="text/javascript"></script>
+    <!--<script src="assets/js/main.js" type="text/javascript"></script>-->
+    <!--<script src="assets/asset/js/wow.min.js" type="text/javascript"></script>-->
+
+    
+          <script src="js/bottom.js"></script>
+ 
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_Login1_UserNameRequired"), document.getElementById("ContentPlaceHolder1_Login1_PasswordRequired"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_Login1_UserNameRequired = document.all ? document.all["ContentPlaceHolder1_Login1_UserNameRequired"] : document.getElementById("ContentPlaceHolder1_Login1_UserNameRequired");
+ContentPlaceHolder1_Login1_UserNameRequired.controltovalidate = "ContentPlaceHolder1_Login1_UserName";
+ContentPlaceHolder1_Login1_UserNameRequired.errormessage = "User Name is required.";
+ContentPlaceHolder1_Login1_UserNameRequired.validationGroup = "ctl00$ContentPlaceHolder1$Login1";
+ContentPlaceHolder1_Login1_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_Login1_UserNameRequired.initialvalue = "";
+var ContentPlaceHolder1_Login1_PasswordRequired = document.all ? document.all["ContentPlaceHolder1_Login1_PasswordRequired"] : document.getElementById("ContentPlaceHolder1_Login1_PasswordRequired");
+ContentPlaceHolder1_Login1_PasswordRequired.controltovalidate = "ContentPlaceHolder1_Login1_Password";
+ContentPlaceHolder1_Login1_PasswordRequired.errormessage = "Password is required.";
+ContentPlaceHolder1_Login1_PasswordRequired.validationGroup = "ctl00$ContentPlaceHolder1$Login1";
+ContentPlaceHolder1_Login1_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_Login1_PasswordRequired.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
 </body>
 </html>
