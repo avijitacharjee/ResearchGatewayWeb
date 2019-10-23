@@ -3,102 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
+    <title>Research Gateway</title>
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-
-
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/mysite.css" rel="stylesheet" type="text/css"/>
+    </head>
 <body class="logged-out">
-<form method="post" action="http://researchgateway.in/" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEzOTE2NDY1NmRkZs/1GC+/0Fwou0fTeLqN/ggHqXftVdS9OV9UyHbeJeo=" />
-</div>
-
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-</div>
     <header id="header">
-      <style>
-    @import url(http://fonts.googleapis.com/css?family=Autour+One|Meie+Script|Armata|Rum+Raisin|Sonsie+One|Kavoon|Denk+One|Gravitas+One|Racing+Sans+One|Nosifer|Ropa+Sans|Offside|Titan+One|Paytone+One|Audiowide|Righteous|Faster+One|Russo+One|Germania+One|Krona+One|Emblema+One|Creepster|Delius+Unicase|Wallpoet|Sansita+One|Monoton|Kenia|Monofett);
-    /* Begin Royal Side Button Styles*/
-    #royal_sidebutton_tab {
-    font-family:"Righteous", cursive;
-    top:400px;
-    background-color:#d25a19;
-    color:#FFFFFF;
-    border-style:solid;
-    border-width:0px;
-    }
-    #royal_sidebutton_tab:hover {
-    background-color: #3EA2C7;
-    }
-    .royal_sidebutton_contents {
-    position:fixed;
-    margin:0;
-    padding:6px 13px 8px 13px;
-    text-decoration:none;
-    text-align:center;
-    font-size:18px;
-    font-weight:bold;
-    border-style:solid;
-    display:block;
-    z-index:100000;
-    }
-    .royal_sidebutton_left {
-    cursor: pointer;
-    -webkit-transform-origin:0 0;
-    -moz-transform-origin:0 0;
-    -o-transform-origin:0 0;
-    -ms-transform-origin:0 0;
-    -webkit-transform:rotate(270deg);
-    -moz-transform:rotate(270deg);
-    -ms-transform:rotate(270deg);
-    -o-transform:rotate(270deg);
-    transform:rotate(270deg);
-    right:-84px;
-    -moz-border-radius:10px 10px 0px 0px;
-    border-radius:10px 10px 0px 0px;
-    <!--[if lte IE 8]>
-/* Internet Explorer 8 and below */
--ms-transform:rotate(270deg) / !important;
-*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-<![endif]-->
-    }
-
-    .top-bar {
-       
-        z-index:1000;
-    }
-    nav {
-        position:fixed;
-        z-index:100;
-    }
-</style>
-<link href="assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
-<link href="assets/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-
+<div class="Headr">
 <div class="top-bar">
     <div class="container">
         <div class="row">
@@ -341,6 +266,7 @@
 		 </ul>
     </nav>
 </nav>
+</div>
     @yield('content')
 
 
@@ -488,7 +414,7 @@
     </script>
     <!-- /top-link-block -->
     <!-- Jscript -->
-    <script rel="nofollow"  src='assets/js/jquery-2.1.3.min.js'></script>
+    <script rel="nofollow"  src='assets/js/jquery.min.js'></script>
     <script rel="nofollow"  src='assets/js/jquery.js' type="text/javascript"></script>
     <script rel="nofollow"  src='assets/js/bootstrap.min.js' type="text/javascript"></script>
     <script rel="nofollow"  src='assets/js/jquery.prettyPhoto.js' type="text/javascript"></script>
@@ -500,47 +426,5 @@
           <script src="js/bottom.js"></script>
  
     
-<script type="text/javascript">
-//<![CDATA[
-var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_Login1_UserNameRequired"), document.getElementById("ContentPlaceHolder1_Login1_PasswordRequired"));
-//]]>
-</script>
-
-<script type="text/javascript">
-//<![CDATA[
-var ContentPlaceHolder1_Login1_UserNameRequired = document.all ? document.all["ContentPlaceHolder1_Login1_UserNameRequired"] : document.getElementById("ContentPlaceHolder1_Login1_UserNameRequired");
-ContentPlaceHolder1_Login1_UserNameRequired.controltovalidate = "ContentPlaceHolder1_Login1_UserName";
-ContentPlaceHolder1_Login1_UserNameRequired.errormessage = "User Name is required.";
-ContentPlaceHolder1_Login1_UserNameRequired.validationGroup = "ctl00$ContentPlaceHolder1$Login1";
-ContentPlaceHolder1_Login1_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_Login1_UserNameRequired.initialvalue = "";
-var ContentPlaceHolder1_Login1_PasswordRequired = document.all ? document.all["ContentPlaceHolder1_Login1_PasswordRequired"] : document.getElementById("ContentPlaceHolder1_Login1_PasswordRequired");
-ContentPlaceHolder1_Login1_PasswordRequired.controltovalidate = "ContentPlaceHolder1_Login1_Password";
-ContentPlaceHolder1_Login1_PasswordRequired.errormessage = "Password is required.";
-ContentPlaceHolder1_Login1_PasswordRequired.validationGroup = "ctl00$ContentPlaceHolder1$Login1";
-ContentPlaceHolder1_Login1_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_Login1_PasswordRequired.initialvalue = "";
-//]]>
-</script>
-
-
-<script type="text/javascript">
-//<![CDATA[
-
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
-
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        //]]>
-</script>
 </body>
 </html>
